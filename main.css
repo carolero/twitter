@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    background-color: #E6ECF0;
+    font-family: 'Comfortaa', cursive;
+}
+
+a:link {
+    text-decoration:none;
+} 
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;        
+    background-color: #fff;
+    font-family: 'Fredoka One', cursive;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #9EA3A3;
+}
+
+.titulo i {
+    padding-right: 600px!important;
+    position: relative;
+    right: 70px;
+}
+
+
+.menu ul li a {
+    color: #9EA3A3;
+    
+}
+
+.menu li:first-child a {
+    color: #1DA1F2;
+}
+
+#header hr {
+    position: relative;
+    border: #1DA1F2 1px solid;
+    right: 512px;
+    top: 17px;
+    height: 1px;
+    width: 129px;
+}
+
+
+.menu ul li a:hover {
+    color: #1DA1F2;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 13px;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;  
+}
+
+.menu ul li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1DA1F2;
+    height: 2px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.menu ul li:hover:before, .menu ul li:focus:before, .menu ul li:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+  
+#divBusca {
+      position: relative;
+      bottom: 46px;
+      left: 950px;
+}
+
+#divBusca input {
+    border: #E6ECF0 1px solid;
+    background-color: #F5F8FA;
+    border-radius: 20px 20px;
+    padding: 8px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#divBusca input:focus {
+    border: #1DA1F2 2px solid;
+    background-color: #fff;
+}
+
+.fa-search {
+    color: #9EA3A3;
+    position: relative;
+    left: 210px;
+    top: 2px;
+}
+
+.fa-user-circle {
+    font-size: 30px;
+    color: #CAD3D9;
+    position: relative;
+    top: 6px;
+    left: 230px;
+}
+
+#tweetar-btn {
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    background-color: #55ACEE;
+    position: relative;
+    left: 50px;
+    border-radius: 20px 20px;
+    padding: 8px 15px;
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#tweetar-btn:hover {
+    background-color: #1DA1F2;
+    cursor: pointer; 
+}
+
+#box-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigBox {
+    background-color: #fff;
+    padding: 0px 0px 10px 0px;
+    height: 145px;
+    width: auto;
+}
+
+.container {
+    background-color: #E8F5FD;
+    height: 100px;
+    width: 400px;
+    padding: 10px 10px;
+    border-bottom: 2px solid #e6ecf0;
+}
+
+.container textarea {
+    position: absolute;
+    margin-left: 80px;
+    border: none;
+    background-color: #fff;
+    border-bottom: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.container p {
+    position: absolute;
+    margin: 60px 349px;
+}
+
+#form button {
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    background-color: #55ACEE;
+    margin: 95px 0px 0px 300px;
+    border-radius: 20px 20px;
+    padding: 8px 15px;
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.fa-user-circle {
+    position: absolute;
+    margin: 100px 280px;
+}
+
+#tweets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+textarea {
+    overflow: auto;
+}

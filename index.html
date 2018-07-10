@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></main>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Comfortaa:400,700|Fredoka+One" rel="stylesheet">
+        <title>Twitter</title>
+    </head>
+    <body>
+
+        <header id="header">
+
+            <div class="menu">
+                <ul>
+                    <li class="first"><a href="#"><i class="fas fa-home"></i> Página Inicial</a></li>
+                    <li><a href="#"><i class="fas fa-bolt"></i></i> Moments</a></li>
+                    <li><a href="#"><i class="far fa-bell"></i> Notificações</a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i> Mensagens</a></li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="titulo">
+                    <!-- <h1>Twitter</h1>    -->
+                    <i class="fab fa-twitter" style="color: #1DA1F2; font-size: 22px;"></i>
+
+            </div>
+
+        </header>
+
+        <section>
+
+        <div id="divBusca">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user-circle"></i>
+                <input type="text" class="txtBusca" placeholder="Buscar..."></input>
+                <button type="button" id="tweetar-btn">Tweetar</button>
+        </div>
+            
+
+        </section>
+
+        <section id="box-text" class="box text">
+            <div class="bigBox">
+                <div id="form">
+                        <i class="far fa-user-circle"></i>
+                        <form class="container">
+                                <textarea id="areaText" onkeypress="counter()" style="resize: none;" class="msg" rows="5" cols="35"></textarea>
+                                <p class="char-left">140</p>
+                                <button onclick="funcTweetar()" class="button-tweetar" type="button">Tweetar</button>
+                        </form>
+                        
+                </div>
+            </div>
+    
+        </section>
+        <section id="tweets">
+            <div class="tweet"></div>
+        </section>
+    
+    </body>
+    <script src="app.js"></script>
+</html>
