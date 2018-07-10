@@ -95,7 +95,7 @@ a:link {
   
 #divBusca {
       position: relative;
-      bottom: 46px;
+      bottom: 42px;
       left: 950px;
 }
 
@@ -203,9 +203,10 @@ a:link {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
 }
 
 textarea {
     overflow: auto;
+
 }
